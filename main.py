@@ -3,8 +3,10 @@ import datetime
 
 
 file_operations = 'operations.json'
+file_operations_test = 'tests/list_test.json'
 
-print_operations(load_operations(file_operations))
+#print_operations(load_operations(file_operations))
+print(load_operations(file_operations_test))
 
 # dict_ = load_operations(file_operations)[1]
 # print(dict_['date'])
