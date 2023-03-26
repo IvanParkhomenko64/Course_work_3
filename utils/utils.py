@@ -63,9 +63,11 @@ def operation_output(dict_item: dict):
 
 def print_operations(list_operations):
     i = 0
+    sum_str = ''
     for list_item in list_operations:
         if list_item['state'] != 'CANCELED':
-            print(operation_output(list_item))
+            sum_str = sum_str + operation_output(list_item) + '\n'
             i += 1
             if i == 5:
                 break
+    return sum_str
